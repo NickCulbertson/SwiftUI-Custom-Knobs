@@ -90,8 +90,8 @@ public struct LogicKnob: View {
                         Ellipse().fill(LinearGradient(gradient: Gradient(colors: [Color(red: 0.7, green: 0.7, blue: 0.7), Color(red: 0.5, green: 0.5, blue: 0.5)]), startPoint: .top, endPoint: .bottom)).shadow(radius: 15)
                         Ellipse().fill(LinearGradient(gradient: Gradient(colors: [Color(red: 0.6, green: 0.6, blue: 0.6), Color(red: 0.5, green: 0.5, blue: 0.5)]), startPoint: .top, endPoint: .bottom)).padding(2).padding(.top,2)
                         Rectangle().foregroundColor(.white)
-                            .frame(width: geo.size.width / 40, height: geo.size.width / 4)
-                            .padding(.top,geo.size.width/1.34)
+                            .frame(width: min(geo.size.width, geo.size.height) / 40, height: min(geo.size.width, geo.size.height) / 4)
+                            .padding(.top,min(geo.size.width, geo.size.height)/1.34)
                             .rotationEffect(Angle(radians: normalizedValue * 1.6 * .pi + 0.2 * .pi))
                         
                     }.scaleEffect(x: 0.6, y: 0.6)
