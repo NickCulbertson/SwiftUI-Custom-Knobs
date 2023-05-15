@@ -82,8 +82,9 @@ public struct LogicKnob: View {
                 onEnded: { isShowingValue = false }) { geo in
             VStack{
                 Text("\(isShowingValue ? "\(Int(value))" : text)")
-                    .frame(width: dim(geo) * 0.8)
                     .font(Font.system(size: dim(geo) * 0.2))
+                    .fixedSize()
+                    .frame(width: dim(geo) * 0.8)
                     .foregroundColor(Color(red: 0.7, green: 0.7, blue: 0.7))
                 ZStack(alignment: .center) {
                     ZStack(alignment: .center) {
