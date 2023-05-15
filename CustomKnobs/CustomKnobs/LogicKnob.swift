@@ -88,8 +88,8 @@ public struct LogicKnob: View {
                     .foregroundColor(Color(red: 0.7, green: 0.7, blue: 0.7))
                 ZStack(alignment: .center) {
                     ZStack(alignment: .center) {
-                        Ellipse().fill(LinearGradient(gradient: Gradient(colors: [Color(red: 0.7, green: 0.7, blue: 0.7), Color(red: 0.5, green: 0.5, blue: 0.5)]), startPoint: .top, endPoint: .bottom)).shadow(radius: 15)
-                        Ellipse().fill(LinearGradient(gradient: Gradient(colors: [Color(red: 0.6, green: 0.6, blue: 0.6), Color(red: 0.5, green: 0.5, blue: 0.5)]), startPoint: .top, endPoint: .bottom)).padding(2).padding(.top,2)
+                        Circle().fill(LinearGradient(gradient: Gradient(colors: [Color(red: 0.7, green: 0.7, blue: 0.7), Color(red: 0.5, green: 0.5, blue: 0.5)]), startPoint: .top, endPoint: .bottom)).shadow(radius: 15)
+                        Circle().fill(LinearGradient(gradient: Gradient(colors: [Color(red: 0.6, green: 0.6, blue: 0.6), Color(red: 0.5, green: 0.5, blue: 0.5)]), startPoint: .top, endPoint: .bottom)).padding(2).padding(.top,2)
                         Rectangle().foregroundColor(.white)
                             .frame(width: min(geo.size.width, geo.size.height) / 40, height: min(geo.size.width, geo.size.height) / 4)
                             .padding(.top,min(geo.size.width, geo.size.height)/1.34)
