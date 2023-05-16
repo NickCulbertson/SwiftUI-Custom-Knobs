@@ -117,7 +117,7 @@ public struct LogicKnob: View {
                         .squareFrame(dim(geo) * 0.8)
                                             
                 }.aspectRatio(CGSize(width: 1, height: 1), contentMode: .fit)
-                    .animation(.linear(duration: 0.15), value: value)
+                    .animation(.linear(duration: 0.1), value: value)
 
             }
         }
