@@ -77,7 +77,7 @@ public struct LogicKnob: View {
     
     public var body: some View {
         Control(value: $value, in: range,
-                geometry: .twoDimensionalDrag(xSensitivity: 2, ySensitivity: 2),
+                geometry: .twoDimensionalDrag(xSensitivity: 1, ySensitivity: 1),
                 onStarted: { isShowingValue = true },
                 onEnded: { isShowingValue = false }) { geo in
             VStack{
