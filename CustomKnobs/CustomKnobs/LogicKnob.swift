@@ -96,7 +96,7 @@ public struct LogicKnob: View {
                             .rotationEffect(Angle(radians: normalizedValue * 1.6 * .pi + 0.2 * .pi))
                         
                     }.scaleEffect(x: 0.6, y: 0.6)
-                    .drawingGroup()
+//                    .drawingGroup()
                     Circle()
                         .trim(from: minimumAngle.degrees / 360.0, to: maximumAngle.degrees / 360.0)
                     
